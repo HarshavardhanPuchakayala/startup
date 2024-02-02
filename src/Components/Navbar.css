@@ -1,6 +1,9 @@
 nav{
     list-style-type: none;
 }
+nav a{
+    color: black;
+}
 .nav{
     display: flex;
     align-items: center;
