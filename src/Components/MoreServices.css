@@ -1,0 +1,114 @@
+.MoreServicesSection{
+    background-color:var(--wheat);
+    padding: 1rem 0;
+}
+.MoreservicesHeading{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+.MoreservicesHeading h1{
+    font-size: 2.5rem;
+    font-family: var(--font-family01);
+}
+.MoreservicesHeading p{
+    font-size: 1.1rem;
+    width: 60%;
+    margin: 0 auto;
+}
+.MoreServicesGrid{
+    width: 80%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.MoreServiceCard{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.CardImg .IconBg{
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+}
+.icon{
+    font-size: 2rem;
+    color: white;
+}
+.MoreServiceContent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.MoreServiceContent h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.MoreServiceContent p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.Explore{
+    color: rgb(105, 105, 223);
+}
+.ui{
+    background-color: rgb(92, 185, 222);
+    box-shadow: 0 2px 4px skyblue;
+}
+.Dg{
+    background-color: rebeccapurple;
+    box-shadow: 0 2px 4px rebeccapurple;
+}
+.three{
+    background-color: rgb(32, 113, 11);
+    box-shadow: 0 2px 4px rgb(32, 113, 11);
+}
+.customer{
+    background-color: rgb(222, 108, 9);
+    box-shadow: 0 2px 4px rgb(222, 108, 9);
+}
+.app{
+    background-color: rgb(32, 105, 207);
+    box-shadow: 0 2px 4px rgb(32, 105, 207);
+}
+.web{
+    background-color: rgb(160, 20, 211);
+    box-shadow: 0 2px 4px rgb(160, 20, 211); 
+}
+
+/*Mobiles*/
+
+@media screen and (min-width:10px) and (max-width:780px) {
+    .MoreServicesSection{
+        padding:  0;
+    }
+    .MoreservicesHeading{
+        width: 90%;
+        padding: 2rem 0;
+    }
+    .MoreservicesHeading h1{
+        font-size: 2.2rem;
+    }
+    .MoreservicesHeading p{
+        width: 80%;
+    }
+    .MoreServicesGrid{
+        width: 80%;
+        margin: 0.5rem auto;
+        grid-template-columns: 1fr;
+    }
+    .MoreServiceCard{
+        flex-direction: column;
+    }
+
+}

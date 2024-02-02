@@ -1,0 +1,83 @@
+header{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+}
+.HeaderTitle{
+    display: flex;
+    flex-direction: column;
+
+}
+.HeaderTitle h1{
+    font-family: var(--font-family01);
+    font-size: 3.5rem;
+    width: 80%;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto;
+    line-height: 5rem;
+}
+.HeaderTitle p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.HeaderContent{
+    display: flex;
+    flex-direction: column;
+
+}
+.HeaderContent button{
+    margin: 1rem auto 0 auto;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: var(--green);
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+.HeaderContent button:hover{
+    box-shadow: 5px 5px 0px var(--green);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.HeaderContent button:active {
+    background-color: rgb(11, 49, 11);
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+.HeaderContent img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Mobiles and tablets*/
+@media screen and (min-width:10px) and (max-width:780px) {
+    header{
+        width: 90%;
+        margin: 3rem auto 0 auto;
+    }
+    .HeaderTitle h1{
+        font-size: 3rem;
+        width: 100%;
+        line-height: 4rem;
+        font-weight: 600;
+    }
+    .HeaderTitle p{
+        padding-top: 0.5rem;
+        font-weight: 500;
+    }
+    .HeaderContent button{
+        padding: 0.6rem 1.2rem;
+    
+    }
+    .HeaderContent img{
+        width: 100%;
+    }
+    
+}
